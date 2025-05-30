@@ -1,0 +1,40 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+
+# Ignore logs
+*.log
+
+# Ignore database dumps
+*.sql
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore node_modules (if using JavaScript/Node.js for any scripts)
+node_modules/
+
+# Ignore Python virtual environments (if using Python for any scripts)
+venv/
+__pycache__/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore compiled files
+*.out
+*.class
+*.o
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore any other generated files
+dist/
+build/

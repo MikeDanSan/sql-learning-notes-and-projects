@@ -194,7 +194,7 @@ Cost-Based Optimization
 
     #### Resulting Cartesian Product:
 
-    | table1.column1 |table1.column2 |
+    | table1.column1 |table2.column1 |
     |----------------|---------------|
     | A              |X              |
     | A              |Y              |

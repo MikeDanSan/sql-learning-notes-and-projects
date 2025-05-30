@@ -109,23 +109,23 @@ FROM customers;
 
 ## Under-the-Hood Insights
 
-Query Execution Plan
+1. Query Execution Plan
 
     SQL engines generate a query execution plan to determine how to execute the query efficiently. This plan includes steps like scanning tables, applying filters, and projecting columns.
 
-Predicate Pushdown
+2. Predicate Pushdown
 
     SQL engines often optimize queries by pushing filters (e.g., WHERE conditions) closer to the data source during the FROM clause processing. This reduces the amount of data processed in later stages.
 
-Parallelism
+3. Parallelism
 
     For large datasets, SQL engines may execute parts of the query (e.g., table scans or joins) in parallel across multiple CPU cores to improve performance.
 
-Temporary Storage
+4. Temporary Storage
 
     Intermediate results (e.g., from joins or subqueries) may be stored in temporary tables or memory structures during query execution.
 
-Cost-Based Optimization
+5. Cost-Based Optimization
 
     SQL engines use a cost-based optimizer to evaluate different query execution strategies and choose the one with the lowest estimated cost (e.g., in terms of time or resources).
 

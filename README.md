@@ -30,3 +30,7 @@ sql-learning-notes-and-projects/
     ├── recommended-books.md # List of recommended books
     └── ...                  # Other helpful resources
 ```
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE). Feel free to use and modify the content for personal or educational purposes.

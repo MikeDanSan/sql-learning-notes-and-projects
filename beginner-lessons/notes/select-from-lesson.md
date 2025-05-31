@@ -1,8 +1,9 @@
 # SELECT FROM Lesson
 
 ## SELECT
+> Pick specific ***column(s)***
 
-The `SELECT` statement is used to retrieve data from a database. It specifies the columns you want to fetch from a table. You can select specific columns separated by commas or use * to select all columns.
+The `SELECT` statement is used to retrieve data from a database. It specifies the ***columns*** you want to fetch from a table. You can select specific columns separated by commas or use * to select all columns.
 
 Syntax:
 ```sql
@@ -17,6 +18,7 @@ FROM employees;
 ```
 
 ## FROM
+> Pick specific ***table(s)***
 
 The FROM clause specifies the table from which the data will be retrieved. It is mandatory in a SELECT statement because it tells SQL where to look for the data.
 

@@ -127,3 +127,38 @@ FROM
 WHERE
     unit_price BETWEEN 50 AND 100;
 ```
+
+## NOT Operator
+
+The SQL NOT operator is used to reverse the result of a condition. For example, if a condition is true, applying NOT makes it false — and vice versa. It's often used with other operators like IN, BETWEEN, LIKE, or even full conditions in a WHERE clause.
+
+Example:
+```sql
+SELECT
+    *
+FROM
+    products
+WHERE
+    NOT price BETWEEN 10 AND 50;
+```
+
+Another example:
+
+```sql
+SELECT
+
+    employee_id,
+    first_name,
+    last_name,
+    department
+
+FROM
+
+    employees
+
+WHERE
+
+    department NOT IN ('Marketing', 'IT');
+```
+
+

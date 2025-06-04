@@ -48,3 +48,47 @@ SELECT product_name, unit_price
 FROM products
 WHERE unit_price < 50;
 ```
+
+### Wildcards with WHERE Clause
+
+Wildcard characters are used to filter for pattern matching. 
+
+Example:
+```sql
+SELECT 
+    *
+FROM 
+    customers
+WHERE
+    customer_name LIKE 'Joh%';
+```
+
+### NULL Vlaues and IS NULL/IS NOT NULL
+
+A condition that can be used with WHERE clause is the NULL or IS NOT NULL operators
+
+Example:
+```sql
+SELECT
+    *
+FROM 
+    employees
+WHERE
+    manager_id IS NULL;
+```
+
+## IN Operator
+
+The IN operator is a tool that simplifies SQL queries when dealing with multiple values. Specify a list of values, and the query will retrieve rows that match. 
+
+Example:
+```sql
+SELECT
+    *
+FROM 
+    products
+WHERE
+    (unit_price > 100 AND category IN ('Electronics', 'Appliances')) 
+OR 
+    (category = 'Office Supplies');
+```

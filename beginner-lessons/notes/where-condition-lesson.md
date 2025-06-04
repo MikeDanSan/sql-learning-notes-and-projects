@@ -65,7 +65,7 @@ WHERE
 
 ### NULL Vlaues and IS NULL/IS NOT NULL
 
-A condition that can be used with WHERE clause is the NULL or IS NOT NULL operators
+A condition that can be used with WHERE clause is the NULL or IS NOT NULL operators. Great tool for identifying missing data and performing data quality checks in SQL queries. Use to effectively handle NULL values in your database and ensure data accuracy.
 
 Example:
 ```sql

@@ -92,3 +92,38 @@ WHERE
 OR 
     (category = 'Office Supplies');
 ```
+
+## BETWEEN Operator
+> BETWEEN is ***inclusive***
+
+Use the BETWEEN Operator when dealing with range-based conditions. There is also NOT BETWEEN. Use when filtering data based on:
+
+- **Numeric Types**
+  - INTEGER, SMALLINT, BIGINT
+  - DECIMAL, NUMERIC
+  - FLOAT, REAL, DOUBLE PRECISION
+
+- **Date and Time Types**
+  - DATE
+  - TIME
+  - TIMESTAMP / DATETIME
+
+- **Character/String Types**
+  - CHAR
+  - VARCHAR
+  - TEXT
+
+- **Other (Database-Specific Support)**
+  - BOOLEAN (e.g., PostgreSQL)
+  - ENUM (e.g., MySQL)
+  - UUID (e.g., PostgreSQL)
+
+Example:
+```sql
+SELECT
+    *
+FROM 
+    products
+WHERE
+    unit_price BETWEEN 50 AND 100;
+```

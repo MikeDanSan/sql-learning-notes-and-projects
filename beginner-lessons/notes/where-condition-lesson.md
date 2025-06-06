@@ -161,4 +161,36 @@ WHERE
     department NOT IN ('Marketing', 'IT');
 ```
 
+## ORDER BY
 
+Feature that allows you to sort the results of your SQL queries in a specified order. The ORDER BY clause can sort data in either ascending (ASC) or descending (DESC) order. By default, the sorting is done in ascending order if the sorting order is not explicitly specified. ORDER BY can also sort numbers, text, and dates. Additionally you can use LIMIT clause to retrieve a speified number of sorted records.
+
+For example:
+```sql
+SELECT
+    first_name, 
+    last_name
+FROM
+    employees
+ORDER BY
+    first_name ASC,
+    last_name DESC;
+
+```
+
+## LIMIT OFFSET
+
+LIMIT clause is a valuable tool for managing large datasets and optimizing query performance by restricting the number of rows returned. OFFSET keyword with the LIMIT clause to skip a certain number of rows and retrieve the subsequent ones. Keep in mind that there are compatibility syntax issues so check the documentation of the specific database you are working worth.
+
+For instance:
+```sql
+-- query will return 5 rows from the "customers" table, starting from the 11th row.
+SELECT 
+    *
+FROM 
+    customers
+LIMIT
+    5
+OFFSET
+    10;
+```
